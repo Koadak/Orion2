@@ -131,7 +131,7 @@ class move:
         for m in range(8):
             for k in range(8):
                 if(gametiles[m][k].pieceonTile.tostring()=='k'):
-                    if(gametiles[m][k].pieceonTile.moved==False):
+                    if(gametiles[m][k].pieceonTile.moved==False and k + 3 < 8):
                         if(gametiles[m][k+3].pieceonTile.tostring()=='r'):
                             if(gametiles[m][k+3].pieceonTile.moved==False):
                                 if(gametiles[m][k+1].pieceonTile.tostring()=='-'):
